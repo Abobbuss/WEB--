@@ -1,0 +1,126 @@
+
+.Text{
+    font-size: 55px;
+    padding: 15px;
+    margin: 200px 0 0 0;
+    text-align: center;
+    color:whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.Poisk {
+  padding: 50px 0;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.Poisk input {
+  height: 70px;
+  width: 450px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+
+  color: #3891b4;
+  font-size: 20px;
+}
+.Poisk_option{
+  font-size: 10px;
+  border-color: black;
+}
+.Poisk_Button{
+  padding: 20px 0;
+}
+
+.buttonGetModels{
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.custom-btn {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn {
+  border: none;
+  color: #000;
+  z-index: 1;
+  font-size: 30px;
+}
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  font-size: 40px;
+  color: whitesmoke;
+  background: linear-gradient(45deg, #03AADD, #12e6bf);;
+}
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+
+/*Для параметров*/
+
+.ToDoModel{
+  padding: 15px;
+}
+.NameModelki{
+  margin: 30px 0 50px 0px;
+}
+.Content{
+  
+  margin: 10px;
+}
+.NameParametr{
+  margin: 10px;
+}
+.RangeParametr{
+  margin: 10px;
+}
+.OutValueRange{
+  margin: 10px;
+}
+
+.PredictValue{
+  font-size: 30px;
+}
+
+.button{
+  display: none;
+}
+  

@@ -1,0 +1,483 @@
+body{
+  background: url(/src/img/как\ должно\ быть.jpg) no-repeat;
+  background-size: cover;
+}
+
+.Text{
+    font-size: 55px;
+    padding: 15px;
+    margin: 200px 0 0 0;
+    text-align: center;
+    color:whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.Poisk {
+  padding: 50px 0;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.Poisk input {
+  height: 70px;
+  width: 450px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+
+  color: #3891b4;
+  font-size: 20px;
+}
+.Poisk_option{
+  font-size: 10px;
+  border-color: black;
+}
+.Poisk_Button{
+  padding: 20px 0;
+}
+
+.buttonGetModels{
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.custom-btn {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn {
+  border: none;
+  color: #000;
+  z-index: 1;
+  font-size: 30px;
+}
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  font-size: 40px;
+  color: whitesmoke;
+  background: linear-gradient(45deg, #03AADD, #12e6bf);;
+}
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.ButtonPredict{
+  font-size: 17px;
+  display: flex;
+  text-align: center;
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  margin: 0 0 0 45px;
+}
+.ButtonPredict:hover{
+  border: 8px solid rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+
+/*Для параметров*/
+
+.NameModelki{
+  margin: 30px 0 50px 0px;
+}
+.ToDoModel{
+  line-height: 80px;
+  margin: 0px 0 0 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 850px 500px;
+}
+
+.Content{
+  margin: 10px 0 0 10px;
+}
+.ContentTitle{
+  max-height: 70px;
+  display: grid;
+  grid-template-columns: 260px 250px 150px;
+}
+.NameParametr{
+  font-family:'Roboto';
+  width:600px; 
+
+  height: 1px;
+  
+}
+.InputNameParametr{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  border-radius: 0.3rem;
+  padding: 10px 15px;
+  border-color: lawngreen;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s;
+
+}
+
+.inputName				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+  border-radius: 5px;
+}
+.inputName:focus 		{ 
+  outline:none;
+  border: solid 4px black;
+  border-color: #1B9D86;
+  transition:0.2s ease all; 
+ }
+
+
+
+
+
+.RangeParametr{
+  font-family: "Dosis", Helvetica, Arial, sans-serif; 
+  color: #34495e;
+  text-shadow: white 1px;
+
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: white;
+  width: 200px;
+  height: 8px;
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: linear-gradient(45deg, #03AADD, #1B9D86);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #03facd;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #03facd;
+  transform: scale(1.3);
+}
+
+.OutValueRange{
+  
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+}
+.OutValueRange :focus{
+  outline: none;
+}
+.InputValueRange{
+  background-color: #eee;
+	outline: none;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;    
+	text-indent: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.Predict{
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+.BorderValuePredict{
+  color: white;
+  color:black;
+  font-size: 50px;
+  margin: 0 0 0 0;
+  border: 4px solid white;
+  border-radius: 5px;
+  height: 400px;
+  width: 500px;
+}
+
+.PredictValue{
+  position: relative;
+  color: white;
+  color:black;
+  font-size: 50px;
+  margin: 150px 0 0 0;
+}
+.SM{
+  color: white;
+  font-size: 55px;
+}
+.GraphPredict{
+  border: 1px solid white;
+  height: 400px;
+}
+.button{
+  display: none;
+}
+  
+.loader {
+  position: relative;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  perspective: 800px;
+  z-index: 100;
+}
+
+.inner {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;  
+}
+
+.inner.one {
+  left: 0%;
+  top: 0%;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid #EFEFFA;
+}
+
+.inner.two {
+  right: 0%;
+  top: 0%;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #EFEFFA;
+}
+
+.inner.three {
+  right: 0%;
+  bottom: 0%;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #EFEFFA;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.TitleS{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+}
+.ResultsModel{
+  
+}
+
+
+
+
+.HistoryModel{
+  display: table;
+  margin: 0 auto;
+}
+.NameModel{
+  color: #1B9D86;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  text-shadow:
+  0 0 9px black;
+}
+.NameModel:hover{
+  animation: wave 2s infinite;
+}
+
+.Top-Table{
+  font-size: 25px;
+}
+table {
+  border-spacing: 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  }
+  th {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #03AADD, #1B9D86);
+  color: white;
+  border-right: 2px solid; 
+  }
+  th:first-child {
+  text-align: left;
+  }
+  th:last-child {
+  border-right: none;
+  }
+  td {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  }
+  td:first-child {
+  border-left: 2px solid white;
+  border-right: none;
+  }
+  td:nth-child(2){
+  text-align: left;
+  }
+  .TableDate{
+    width: 110px;
+  }
+
+  .TableTitle{
+    display: grid;
+    grid-template-columns:  150px 122px 117px;
+  }
+  .Date{
+    color: white;
+    font-size: 20px;
+  }
+  .Value{
+    color: white;
+    font-size: 20px;
+  }
+  .Result{
+    color: white;
+    font-size: 30px;
+  }
+  .Picture{
+    
+  }
+.input__file{
+  margin: 30px 0 25px 0;
+    text-align: center;
+  }
+.form-group{
+  max-height: 100px;
+}
+  .input__file input[type=file]{
+    outline:0;
+    opacity:0;
+    pointer-events:none;
+    user-select:none
+}
+  .input__file .label{
+    width:200px;
+    border:2px dashed white;
+    border-radius:5px;
+    display:inline-block;
+    transition:border 300ms ease;
+    cursor:pointer;
+    text-align:center;
+    height: 120px;
+
+}
+  .input__file ,.input__file .label .title{
+    color: white;
+    transition:200ms color;
+}
+  .input__file .label:hover{
+    border:2px solid #000
+}
+  .input__file .label:hover i,.input__file .label:hover .title{
+    color:#000;
+}
+.input__file .title{
+    font-size: 20px
+}
+.SM2{
+  margin: 20px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
